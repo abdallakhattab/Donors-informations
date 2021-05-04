@@ -32,7 +32,7 @@ function addingDonar () {
   let donName = document.getElementById('donorName').value;
   //console.log(donName);
   let donamount = document.getElementById('amount').value;
-  console.log(donamount);
+  //console.log(donamount);
   event.preventDefault();
   let newDonar = new Donars(donName, donamount);
   let lsarr = JSON.stringify(arrofobj);
@@ -41,16 +41,17 @@ function addingDonar () {
 }
 console.log(arrofobj);
 function rendertable() {
-  for( let i =0 ; i <= arrofobj.length ; i++){
-    let norArrOfObj = localStorage.getItem('arrofobj');
-    let norArrOfObj2 = JSON.parse(norArrOfObj);
-    let table = document.getElementById('table');
+
+  let norArrOfObj = localStorage.getItem('arrofobj');
+  let norArrOfObj2 = JSON.parse(norArrOfObj);
+  let table = document.getElementById('table');
+  for(let i=0 ; i<= 5 ;i++){
     let trEl1 = document.createElement('tr');
     table.appendChild(trEl1);
-    let tdEl = document.createElement('td');
-    trEl1.appendChild(tdEl);
-    tdEl.textContent = norArrOfObj2;
-    console.log(norArrOfObj2);
+    //   let tdEl = document.createElement('td');
+    //   trEl1.appendChild(tdEl);
+    trEl1.textContent = norArrOfObj2;
+  //console.log(norArrOfObj2);
   }
 }
 rendertable();
