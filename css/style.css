@@ -1,0 +1,63 @@
+body header {
+
+    background-color: rgba(96, 96, 96,.8);
+    height:70px ;
+}
+body header h1 {
+    color: #eee;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 20px;
+}
+body footer {
+    background-color: rgba(96, 96, 96,.8);
+    height: 50px;
+    position:relative;
+    top:400px;
+
+
+}
+body footer p {
+    color: #eee;
+    font-size: large;
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+body main form {
+    background-color:rgba(96, 96, 96,.8);
+    width: 30%; ;
+    margin: 20px;
+    border-radius: 3px;
+
+
+}
+body main form label {
+    padding-right: 80px;
+    color: #eee;
+}
+#labamount {
+    padding-right: 110px;
+color: #eee;
+}
+body main form button {
+    width: 178px;
+    margin-left: 165px;
+    background-color: black;
+    color: white;
+
+}
+#amount {
+  width: 178px;
+
+    }
+
+body main table {
+    border: white;
+    background-color:rgba(96, 96, 96,.8); 
+    margin-left: 600px;
+    position: relative;
+    bottom: 70px;
+    border-radius: 3px;
+
+}
